@@ -9,9 +9,8 @@ import com.mygdx.game.MyGdxGame;
  * Created by andrewgingerich on 12/8/16.
  */
 public class MenuState extends State {
-    private Texture background;
-    private Texture playBtn;
 
+    private Texture background;
 
     public MenuState(GameStateManager gsm) {
         super(gsm);
@@ -22,7 +21,7 @@ public class MenuState extends State {
     @Override
     public void handleInput() {
         if(Gdx.input.justTouched()){
-            //gsm.set(new PlayState(gsm));
+            gsm.set(new PlayState(gsm));
             dispose();
         }
     }
@@ -43,6 +42,5 @@ public class MenuState extends State {
     @Override
     public void dispose() {
         background.dispose();
-        playBtn.dispose();
     }
 }

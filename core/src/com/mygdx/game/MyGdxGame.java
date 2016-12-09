@@ -13,7 +13,7 @@ public class MyGdxGame extends ApplicationAdapter {
 	public static final int HEIGHT = 1080;
 
 
-	public static final String TITLE = "Class Finder";
+	public static final String TITLE = "Mini Gold";
 
 	private GameStateManager gsm;
 	private SpriteBatch batch;
